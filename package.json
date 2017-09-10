@@ -1,6 +1,6 @@
 {
   "name": "Oxy-node",
-  "version": "0.1.0",
+  "version": "0.1.1-testnet",
   "private": true,
   "scripts": {
     "start": "node app.js",
