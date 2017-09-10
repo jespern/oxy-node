@@ -6,7 +6,7 @@ module.exports = {
 		{ height: 1,      ver: "^0.1.0"}
 	],
 	activeDelegates: 201,
-	maximumVotes: 1,
+	maximumVotes: 51,
 	addressLength: 208,
 	blockHeaderLength: 248,
 	blockTime: 15000,
