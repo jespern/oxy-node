@@ -17,8 +17,8 @@ module.exports = {
 		send: 10000000,
 		vote: 100000000,
 		secondsignature: 10000000,
-		delegate: 2500000000,
-		multisignature: 500000000,
+		delegate: 500000000,
+		multisignature: 100000000,
 		dapp: 2500000000
 	},
 	feeStart: 1,
@@ -50,7 +50,7 @@ module.exports = {
             100000000
 		],
 		offset: 10,   // Start rewards at block (n)
-		distance: 1168800, // Distance between each milestone ~ 1 year
+		distance: 2103840, // Distance between each milestone ~ 1 year
 	},
 	signatureLength: 196,
 	totalAmount: 9999999983700000,
