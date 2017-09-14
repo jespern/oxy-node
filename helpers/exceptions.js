@@ -1,9 +1,20 @@
 'use strict';
-
+/**
+ * @namespace exceptions
+ * @memberof module:helpers
+ * @property {object} genesisPublicKey
+ * @property {string} genesisPublicKey.mainnet
+ * @property {string} genesisPublicKey.testnet
+ * @property {Strin[]} senderPublicKey
+ * @property {Strin[]} signatures
+ * @property {Strin[]} multisignatures
+ * @property {Strin[]} votes
+ */	
 module.exports = {
+	blockRewards: [],
 	genesisPublicKey: {
-		mainnet: '1ab1771b96e778375acc0fffaead18726c325305359128201e516b02312f0882',
-		testnet: '0001c2718fea743e0cd4b97790962630f08801c3ba68e63b3fa83a24fdbd1c85'
+		mainnet: '4c1170a3edb03f961e5e3f7cedcd25563f0a46ec4aa3342715d09c47b398ea19',
+		testnet: '0daee950841005a3f56f6588b4b084695f0d74aaa38b21edab73446064638552'
 	},
 	rounds: {
 	},

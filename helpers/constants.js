@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	currentVersion: "0.1.0",
+	currentVersion: "0.1.1",
 	minVersion: [
 		{ height: 1,      ver: "^0.1.0"}
 	],
@@ -13,14 +13,19 @@ module.exports = {
 	blockReceiptTimeOut: 30*2, // 2 blocks
 	confirmationLength: 77,
 	epochTime: new Date(Date.UTC(2016, 4, 24, 17, 0, 0, 0)),
-	fees: {
-		send: 10000000,
-		vote: 100000000,
-		secondsignature: 10000000,
-		delegate: 500000000,
-		multisignature: 100000000,
-		dapp: 2500000000
-	},
+	fees: [
+		{
+			height: 1,
+			fees: {
+				send: 10000000,
+				vote: 100000000,
+				secondsignature: 10000000,
+				delegate: 500000000,
+				multisignature: 100000000,
+				dapp: 2500000000
+			}
+		}
+	],
 	feeStart: 1,
 	feeStartVolume: 10000 * 100000000,
 	fixedPoint: Math.pow(10, 8),
@@ -42,16 +47,16 @@ module.exports = {
 	],
 	numberLength: 100000000,
 	requestLength: 104,
-	rewards: {
-		milestones: [
-            500000000,  // Initial reward
-            250000000,  // Milestone 1
-            150000000,   // Milestone 2
-            100000000
-		],
-		offset: 10,   // Start rewards at block (n)
-		distance: 2103840, // Distance between each milestone ~ 1 year
-	},
+	rewards: [
+		{height: 1, reward: 0},
+		{height: 10, reward: 500000000},
+		{height: 11, reward: 30000000},
+		{height: 12, reward: 20000000},
+		{height: 13, reward: 500000000},
+		{height: 2103840, reward: 250000000},
+		{height: 2103840*2, reward: 150000000},
+		{height: 2103840*3, reward: 100000000}
+	],
 	signatureLength: 196,
 	totalAmount: 9999999983700000,
 	unconfirmedTransactionTimeOut: 10800 // 1080 blocks

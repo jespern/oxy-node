@@ -6,29 +6,31 @@ Automatic install script for Debian based systems Ubuntu, Mint, Debian.
 
 <b>Install (Mainnet)</b>
 ```
-$ cd $HOME
-$ git clone https://github.com/Oxycoin/oxy-node.git
-$ cd oxy-node
-$ ./oxy_manager.bash install
+cd $HOME
+git clone https://github.com/Oxycoin/oxy-node.git
+cd oxy-node
+./oxy_manager.bash install
 ```
 
 Then start the oxy-node with this line:
 ```
-$ ./oxy_manager.bash start
+./oxy_manager.bash start
+```
+
+To check the node status:
+```
+./oxy_manager.bash status
 ```
 
 <b>Install (Testnet)</b>
+It works the same as the installation of mainnet, except for this line:
 ```
-$ cd $HOME
-$ git clone -b testnet https://github.com/Oxycoin/oxy-node.git
-$ cd oxy-node
-$ ./oxy_manager.bash install
+git clone -b testnet https://github.com/Oxycoin/oxy-node.git
 ```
 
-Then start the oxy-node with this line:
-```
-$ ./oxy_manager.bash start
-```
+## Important
+Please open up ports 10000 and 10001 for mainnet <br>
+Please open up ports 9998 9999 for testnet
 
 ## Authors
 - Jan <lepetitjan@icloud.com>
