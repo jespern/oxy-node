@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	currentVersion: "0.1.0",
+	currentVersion: "0.1.1",
 	minVersion: [
 		{ height: 1,      ver: "^0.1.0"}
 	],
@@ -50,6 +50,9 @@ module.exports = {
 	rewards: [
 		{height: 1, reward: 0},
 		{height: 10, reward: 500000000},
+		{height: 11, reward: 30000000},
+		{height: 12, reward: 20000000},
+		{height: 13, reward: 500000000},
 		{height: 2103840, reward: 250000000},
 		{height: 2103840*2, reward: 150000000},
 		{height: 2103840*3, reward: 100000000}
