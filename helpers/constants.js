@@ -3,7 +3,8 @@
 module.exports = {
 	currentVersion: "0.1.1",
 	minVersion: [
-		{ height: 1,      ver: "^0.1.0"}
+		{ height: 1,      ver: "^0.1.0"},
+		{ height: 510000, ver: "^0.1.1"}
 	],
 	activeDelegates: 201,
 	maximumVotes: 51,
@@ -20,8 +21,19 @@ module.exports = {
 				send: 10000000,
 				vote: 100000000,
 				secondsignature: 10000000,
-				delegate: 500000000,
-				multisignature: 100000000,
+				delegate: 2500000000,
+				multisignature: 500000000,
+				dapp: 2500000000
+			}
+		},
+		{
+			height: 510000,
+			fees: {
+				send: 10000000,
+				vote: 100000000,
+				secondsignature: 10000000,
+				delegate: 2500000000,
+				multisignature: 500000000,
 				dapp: 2500000000
 			}
 		}
