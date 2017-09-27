@@ -212,7 +212,7 @@ install_node_npm() {
 install_oxy() {
 
     echo -n "Installing OXY core..."
-    npm install --production &>> $logfile || { echo "Could not install OXY, please check the log directory. Exiting." && exit 1; }
+    npm install --production --unsafe-perm &>> $logfile || { echo "Could not install OXY, please check the log directory. Exiting." && exit 1; }
     echo -e "done.\n"
 
     return 0;
